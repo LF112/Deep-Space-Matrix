@@ -130,12 +130,176 @@ main{
     color: #fff;
     position: absolute;
     width: 55em;
-    height: 70px;
+    min-height: 70px;
     padding: 45px;
     margin-top: 10em;
     display: flex;
     align-items: center;
 }
+
+main .DSM-LOGO{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 195px;
+    height: 160px;
+    width: 100%;
+}
+
+main .DSM-LOGO .DSM-LOGO_LF{
+    font-family: 'Ubuntu',sans-serif;
+    position: relative;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: .65em;
+    clear: both;
+    margin-top: 20px;
+}
+
+/* Made By @mashirozx */
+.glitch {
+    position: relative;
+    color: #fff;
+    mix-blend-mode: lighten
+}
+
+.glitch:before,.glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0);
+    clip: rect(0,0,0,0)
+}
+
+.glitch:before {
+    left: -1px;
+    text-shadow: 1px 0 #afafaf
+}
+
+.glitch:after {
+    left: 1px;
+    text-shadow: -1px 0 #515151
+}
+
+.glitch:hover:before {
+    text-shadow: 4px 0 #afafaf;
+    animation: glitch-loop-1 .8s infinite ease-in-out alternate-reverse
+}
+
+.glitch:hover:after {
+    text-shadow: -5px 0 #515151;
+    animation: glitch-loop-2 .8s infinite ease-in-out alternate-reverse
+}
+
+@-webkit-keyframes glitch-loop-1 {
+    0% {
+        clip: rect(36px,9999px,9px,0)
+    }
+
+    25% {
+        clip: rect(25px,9999px,99px,0)
+    }
+
+    50% {
+        clip: rect(50px,9999px,102px,0)
+    }
+
+    75% {
+        clip: rect(30px,9999px,92px,0)
+    }
+
+    100% {
+        clip: rect(91px,9999px,98px,0)
+    }
+}
+
+@keyframes glitch-loop-1 {
+    0% {
+        clip: rect(36px,9999px,9px,0)
+    }
+
+    25% {
+        clip: rect(25px,9999px,99px,0)
+    }
+
+    50% {
+        clip: rect(50px,9999px,102px,0)
+    }
+
+    75% {
+        clip: rect(30px,9999px,92px,0)
+    }
+
+    100% {
+        clip: rect(91px,9999px,98px,0)
+    }
+}
+
+@-webkit-keyframes glitch-loop-2 {
+    0% {
+        top: -1px;
+        left: 1px;
+        clip: rect(65px,9999px,119px,0)
+    }
+
+    25% {
+        top: -6px;
+        left: 4px;
+        clip: rect(79px,9999px,19px,0)
+    }
+
+    50% {
+        top: -3px;
+        left: 2px;
+        clip: rect(68px,9999px,11px,0)
+    }
+
+    75% {
+        top: 0;
+        left: -4px;
+        clip: rect(95px,9999px,53px,0)
+    }
+
+    100% {
+        top: -1px;
+        left: -1px;
+        clip: rect(31px,9999px,149px,0)
+    }
+}
+
+@keyframes glitch-loop-2 {
+    0% {
+        top: -1px;
+        left: 1px;
+        clip: rect(65px,9999px,119px,0)
+    }
+
+    25% {
+        top: -6px;
+        left: 4px;
+        clip: rect(79px,9999px,19px,0)
+    }
+
+    50% {
+        top: -3px;
+        left: 2px;
+        clip: rect(68px,9999px,11px,0)
+    }
+
+    75% {
+        top: 0;
+        left: -4px;
+        clip: rect(95px,9999px,53px,0)
+    }
+
+    100% {
+        top: -1px;
+        left: -1px;
+        clip: rect(31px,9999px,149px,0)
+    }
+}
+/* Made By @mashirozx */
 
 ::selection {
     background: #b2b8c1;
