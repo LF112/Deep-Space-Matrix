@@ -156,6 +156,13 @@ main .DSM-LOGO .DSM-LOGO_LF{
     margin-top: 20px;
 }
 
+main .DSM-LOGO span{
+    color: #fff;
+    line-height: 45px;
+    font-size: 20px;
+    letter-spacing: .03em;
+}
+
 /* Made By @mashirozx */
 .glitch {
     position: relative;
