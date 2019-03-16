@@ -1,0 +1,18 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    font-weight:400;
+    font-family:Titillium Web,sans-serif;
+}
