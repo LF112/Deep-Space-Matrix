@@ -16,3 +16,41 @@ body{
     font-weight:400;
     font-family:Titillium Web,sans-serif;
 }
+
+.DSM-Background{
+    background: url('images/DSM-background.png');
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 0;
+    position: fixed;
+    z-index: -100000;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.DSM-Background::before {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.DSM-Background::before,.DSM-Background:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+
+main{
+    color: #fff;
+    position: absolute;
+    width: 55em;
+    height: 70px;
+    padding: 45px;
+    margin-top: 10em;
+    display: flex;
+    align-items: center;
+}
