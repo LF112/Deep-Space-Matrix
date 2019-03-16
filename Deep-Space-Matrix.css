@@ -44,6 +44,88 @@ body{
     content: "";
 }
 
+header{
+    width: 55em;
+    height: 52px;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-self: stretch;
+    align-items: center;
+}
+
+header .DSM-About_ExDragine{
+    display: block;
+    position: relative;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: .02em;
+}
+
+header .DSM-About_ExDragine .DSM-ExDragine_avatar{
+    position: absolute;
+    margin-top: 12px;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0 0 8px 0 rgba(148, 148, 148, 0.5), 0 2px 4px 0 rgba(95, 95, 95, 0.5);
+}
+
+header .DSM-About_ExDragine .DSM-ExDragine_avatar img{
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+}
+
+header .DSM-ExDragine_Info{
+    padding: 0 0 0 42px;
+    text-align: center;
+    color: #fff;
+}
+
+header .DSM-ExDragine_Info .Name{
+    display: inline-block;
+    width: auto;
+    user-select: none;
+    font-size: 19px;
+    line-height: 32px;
+}
+
+header .DSM-ExDragine_Info .description{
+    width: auto;
+    user-select: none;
+    font-size: 13px;
+    letter-spacing: .05em;
+}
+
+header .DSM_spacer{
+    flex-grow: 1;
+    flex-shrink: 0
+}
+
+header .DSM_menu{
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header .DSM_menu a{
+    margin-top: 10px;
+    font-size: 10px;
+    color: rgba(220, 220, 220, 0.84)
+}
+
+header .DSM_bottom{
+    width: 815px;
+    border-radius: 3px;
+    position: absolute;
+    margin-top: 35px;
+    border-bottom: 1px solid #bcbcbc;
+}
+
 main{
     color: #fff;
     position: absolute;
@@ -53,4 +135,9 @@ main{
     margin-top: 10em;
     display: flex;
     align-items: center;
+}
+
+::selection {
+    background: #b2b8c1;
+    color: #fff;
 }
